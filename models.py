@@ -29,7 +29,7 @@ class StyleTransfer(nn.Module):
         pass
 
     def forward(self, x, mode:str):
-        #TODO: Slice convolutional layers separately for style and content processing.
+        #TODO: Slice convolutional layers separately for style and content processing
         features = []
         if mode=='style':
             for i in range(len(self.vgg19_features)):
