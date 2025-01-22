@@ -1,0 +1,4 @@
+1. Model - Implementation torch model
+2. Dataset - preprocessing, postprocessing, load, store
+3. Loss - In some cases, Loss func can be complicated, so it might be better to implement it separately. 
+4. Train - Combine the above three to set up the main training loop and model update.
