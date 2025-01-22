@@ -1,5 +1,5 @@
 # VGG19 pre train Laod
-# VGG19 conv layer 분리
+# Detach VGG19 convolutional layers
 # deep image representation
 
 # skeleton code
@@ -23,13 +23,13 @@ class StyleTransfer(nn.Module):
         self.vgg19_model = vgg19(pretrained=True)
         self.vgg19_features = self.vgg19_model.features
 
-        #TODO: conv Layer 분리
+        #TODO: Detach conv Layer
         self.style_layer = [conv['conv1_1'], conv['conv2_1'], conv['conv3_1'], conv['conv4_1'], conv['conv5_1']]
         self.content_layer = [conv['conv4_2']]
         pass
 
     def forward(self, x, mode:str):
-        #TODO: style, content 마다 conv layer slicing 해서 사용하기
+        #TODO: Slice convolutional layers separately for style and content processing.
         features = []
         if mode=='style':
             for i in range(len(self.vgg19_features)):
