@@ -5,4 +5,5 @@ This is my first implementation using [Pytorch](https://pytorch.org/). The paper
 ## Diagram of the Image Style Transfer Process
 
 The image style transfer process is shown in the diagram below.
-![image](https://github.com/masonl2ee/image-style-transfer-using-cnn.git/img/sd_styleTransfer.png)
+
+![Image](https://github.com/user-attachments/assets/27bd59a8-4c19-4eb8-957a-cd108b489369)
